@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Velvet Vault — a heist game</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0d0b16; height: 100%; }
+  body { font-family: Georgia, 'Times New Roman', serif; }
+  #wrap { width: min(1280px, 100vw); margin: 0 auto; }
+  canvas { display: block; width: 100%; height: auto; background: #1a1730; cursor: crosshair; }
+  #help { color: #b9b3d6; text-align: center; font-size: 13px; padding: 8px 12px 4px; font-family: Verdana, sans-serif; }
+  #help b { color: #f2d06b; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="help">Move: <b>WASD / arrows</b> or <b>click to walk</b> &nbsp;·&nbsp; Smoke pellet: <b>Q</b> (2) &nbsp;·&nbsp; Toss a coin to distract: <b>E</b> (3) &nbsp;·&nbsp; Grab the Velvet Diamond and every loot pile, then slip out the green exit door. If the alarm hits 100, you are caught.</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
